@@ -7,7 +7,7 @@ function App() {
     return (
         <div className="App">
             <h1>TO Do List</h1>
-            {/* <AddTask /> */}
+            <AddTask />
             <ListTask />
         </div>
     );

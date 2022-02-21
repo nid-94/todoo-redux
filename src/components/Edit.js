@@ -5,10 +5,10 @@ import { editTask } from "./../Redux/actions/actions";
 function Edit({ task }) {
     const dispatch = useDispatch();
     const [show, setShow] = useState(false);
-    const [newTask, setNewTask] = useState(task.text);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
+    // ------------------------------------
+    const [newTask, setNewTask] = useState(task.text);
     const handleEdit = () => {
         dispatch(editTask(newTask, task.id));
         handleClose();
